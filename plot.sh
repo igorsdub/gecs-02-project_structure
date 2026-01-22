@@ -1,7 +1,4 @@
 #!/usr/bin/bash
-# Plots word counts of text files as a histogram in commmand line using YouPlot.
-# Usage: bash scripts/plot_counts.sh <filename>
-# Example: bash scripts/plot_counts.sh data/dracula.dat
 
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <filename>"
