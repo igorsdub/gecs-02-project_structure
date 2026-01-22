@@ -21,7 +21,7 @@ Project to visualize Zipf's Law using command line tools. We will use books from
 │   └── time_machine.txt
 ├── counts                          <-- Word count .tsv data
 ├── figures                         <-- Bar plots of word counts
-├── README.md
+├── README.md                       <-- README for the project
 └── scripts                         <-- Scripts directory
     ├── count_words.sh              <-- Counts occurences of word in a books
     ├── get_summary.sh              <-- Gets a book summary
@@ -36,7 +36,7 @@ You will use [YouPlot](https://github.com/red-data-tools/YouPlot), a command lin
 
 ![YouPlot bar plot](https://user-images.githubusercontent.com/5798442/101999903-d36a2d00-3d24-11eb-9361-b89116f44122.png)
 
-For macOS, you can install YouPlot using Homebrew:
+For macOS, you can install YouPlot using [Homebrew](https://brew.sh):
 
 ```bash
 brew install youplot
@@ -73,11 +73,13 @@ Run the following command to generate a list of word counts:
 ```bash
 bash scripts/count_words.sh books/dracula.txt > counts/dracula.tsv
 ```
+>[!TIP]
+> You can use `.tsv` (Tab-Separated Values) file format when storing and handling tabular data. It’s a simple, plain-text file format, where information is organized in rows and columns, and tabs are used as separators. Compared to `.csv`, `.tsv` files avoid many issues related to commas appearing inside data values.
 
 Finally, you can plot the results using YouPlot:
 
 ```bash
-bash scripts/plot_counts.sh counts/dracula.tsv 2> plots/dracula.plot
+bash scripts/plot_counts.sh counts/dracula.tsv 2> figures/dracula.plot
 ```
 
 > [!NOTE]
@@ -86,7 +88,7 @@ bash scripts/plot_counts.sh counts/dracula.tsv 2> plots/dracula.plot
 To access the plots, open the file in directory as a text file or print it to the terminal:
 
 ```bash
-cat plots/dracula.plot
+cat figures/dracula.plot
 ```
 
 Now, you can try to do the same for other books in the `books/` directory! Later on we will see how to automate this process for all books.
