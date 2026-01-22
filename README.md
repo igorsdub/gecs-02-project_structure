@@ -4,6 +4,29 @@
 
 Project to visualize Zipf's Law using command line tools. We will use books from [Research Software Engineering with Pyhton](https://figshare.com/articles/dataset/Research_Software_Engineering_with_Python_Data_Files/13040516) to demonstrate the frequency of word usage in English literature.
 
+## Project Structure
+> Briefly describe the structure of your project, including important directories and files.
+
+```bash
+.
+├── books                           <-- Text files of books used for analysis
+│   ├── dracula.txt
+│   ├── frankenstein.txt
+│   ├── jane_eyre.txt
+│   ├── moby_dick.txt
+│   ├── README.md                   <-- README for the book files
+│   ├── sense_and_sensibility.txt
+│   ├── sherlock_holmes.txt
+│   └── time_machine.txt
+├── counts                          <-- Word count .tsv data
+├── figures                         <-- Bar plots of word counts
+├── README.md
+└── scripts                         <-- Scripts directory
+    ├── count_words.sh              <-- Counts occurences of word in a books
+    ├── get_summary.sh              <-- Gets a book summary
+    └── plot_counts.sh              <-- Plots count histogram in terminal window
+```
+
 ## Prerequisites
 
 > Before running any code, list any prerequisites that need to be installed or configured.
