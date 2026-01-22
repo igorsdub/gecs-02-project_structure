@@ -41,6 +41,9 @@ flowchart LR
     Book --> Counts --> Plot
 ```
 
+>[!TIP]
+> For more diagrams like this, check out [Mermaid](https://mermaid-js.github.io/mermaid/#/) and [a GitHub tuttorial](https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/).
+
 Run the following command to generate a list of word counts:
 
 ```bash
