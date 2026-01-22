@@ -36,7 +36,7 @@ You will use [YouPlot](https://github.com/red-data-tools/YouPlot), a command lin
 
 ![YouPlot bar plot](https://user-images.githubusercontent.com/5798442/101999903-d36a2d00-3d24-11eb-9361-b89116f44122.png)
 
-For macOS, you can install YouPlot using Homebrew:
+For macOS, you can install YouPlot using [Homebrew](https://brew.sh):
 
 ```bash
 brew install youplot
