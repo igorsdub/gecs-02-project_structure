@@ -9,6 +9,7 @@ Project to visualize Zipf's Law using command line tools. We will use books from
 > Before running any code, list any prerequisites that need to be installed or configured.
 
 You will use [YouPlot](https://github.com/red-data-tools/YouPlot), a command line plotting tool. Make sure you have it installed. You can delete it after the tutroial if you wish.
+
 ![YouPlot bar plot](https://user-images.githubusercontent.com/5798442/101999903-d36a2d00-3d24-11eb-9361-b89116f44122.png)
 
 For macOS, you can install YouPlot using Homebrew:
@@ -51,6 +52,9 @@ Finally, you can plot the results using YouPlot:
 ```bash
 bash scripts/plot_counts.sh counts/dracula.tsv 2> plots/dracula.plot
 ```
+
+> [!NOTE]
+> We are using `2>` to redirect the standard error output to a file because YouPlot writes plots to standard error by default. You can learn about `STDOUT` and `STDERR` [here](https://en.wikipedia.org/wiki/Standard_streams).
 
 To access the plots, open the file in directory as a text file or print it to the terminal:
 
